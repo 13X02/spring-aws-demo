@@ -37,6 +37,10 @@ public class Controller {
 	public String checkHealth() {
 		return "I am working fine";
 	}
+	@GetMapping("/welcome")
+	public String welcomeMessage() {
+        return "Welcome to AWS Cloud";
+    }
 
 	/**
 	 * Reads the response from URL_1 and performs some filter operation and returns the data.
